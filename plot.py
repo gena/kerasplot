@@ -1,7 +1,8 @@
+import pathlib
 import tensorflow as tf
 from IPython.display import clear_output        
 import matplotlib.pylab as plt
-import seaborn as sns
+# import seaborn as sns
 
 
 class TrainingPlot(tf.keras.callbacks.Callback):
