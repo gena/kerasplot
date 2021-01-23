@@ -63,7 +63,11 @@ class TrainingPlot(tf.keras.callbacks.Callback):
               continue
 
             v = m['values']
-            v.append(logs.get(m['name']))
+            value = logs.get(m['name'])
+            if value is None:
+                value = 0
+                
+            v.append(value)
                                 
             # old logs
             for i, old_log in enumerate(self.old_logs):
