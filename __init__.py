@@ -1,2 +1,1 @@
-
-from plot import TrainingPlot
+from .plot import TrainingPlot
