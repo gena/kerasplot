@@ -4,7 +4,7 @@ import matplotlib.pylab as plt
 # import seaborn as sns
 import pathlib
 
-class TrainingPlot_(tf.keras.callbacks.Callback):
+class TrainingPlot(tf.keras.callbacks.Callback):
     def __init__(self, nrows=1, ncols=2, figsize=(10, 5), title=None, save_file=None, old_logs_path=None, every_epoch=1):
       self.nrows=nrows
       self.ncols=ncols
