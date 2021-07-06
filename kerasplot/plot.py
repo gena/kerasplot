@@ -1,6 +1,7 @@
 import tensorflow as tf
 from IPython.display import clear_output
 import matplotlib.pylab as plt
+import matplotlib
 # import seaborn as sns
 import pathlib
 import numpy as np
@@ -112,6 +113,7 @@ class TrainingPlot(tf.keras.callbacks.Callback):
           a.legend()
 
       plt.show()
+      matplotlib.rc_file_defaults()
 
       if self.save_file is not None:
         fig.savefig(self.save_file)
